@@ -10,7 +10,9 @@ module.exports = {
         maru: ["Kosugi Maru"],
       },
       colors: {
-        'potato': "#473C56",
+        "potato": "#473C56",
+        "sky": "#3D4256",
+        "star": "E4D471",
       },
     },
   },
