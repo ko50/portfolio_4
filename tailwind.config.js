@@ -11,7 +11,8 @@ module.exports = {
       },
       colors: {
         "potato": "#473C56",
-        "sky": "#3D4256",
+        "sky": "#2C303E",
+        "ocean": "#3D4256",
         "star": "#E4D471",
       },
     },
