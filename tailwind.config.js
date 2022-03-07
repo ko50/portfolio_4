@@ -3,7 +3,16 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        zcool: ["ZCOOL QingKe HuangYou"],
+        dosis: ["Dosis"],
+        maru: ["Kosugi Maru"],
+      },
+      colors: {
+        'potato': "#473C56",
+      },
+    },
   },
   plugins: [],
 }
