@@ -1,5 +1,5 @@
 type _Props = {
-    children: JSX.Element;
+    children: JSX.Element[];
 }
 
 export function Background(props: _Props) {
