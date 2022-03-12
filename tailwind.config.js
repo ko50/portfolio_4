@@ -19,16 +19,6 @@ module.exports = {
       animation: {
         dawn: "dawn 3s cubic-bezier(0.64, 0, 0.78, 0) 1s both",
       },
-      keyframes: {
-        dawn: {
-          "0%": {
-            opacity: "1"
-          },
-          "100%": {
-            opacity: "0",
-          },
-        },
-      },
     },
   },
   plugins: [],
