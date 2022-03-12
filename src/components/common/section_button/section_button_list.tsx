@@ -1,4 +1,4 @@
-import { SectionButton } from "./section_button"
+import { SectionButton } from "components/common/section_button/section_button"
 
 type _Props = {
     names: string[]
