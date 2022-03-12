@@ -12,8 +12,22 @@ module.exports = {
       colors: {
         "potato": "#473C56",
         "sky": "#2C303E",
+        "night": "#161924",
         "ocean": "#3D4256",
         "star": "#E4D471",
+      },
+      animation: {
+        dawn: "dawn 3s cubic-bezier(0.64, 0, 0.78, 0) 1s both",
+      },
+      keyframes: {
+        dawn: {
+          "0%": {
+            opacity: "1"
+          },
+          "100%": {
+            opacity: "0",
+          },
+        },
       },
     },
   },
