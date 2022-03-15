@@ -1,5 +1,5 @@
 type _Props = {
-    name: string;
+    name: string,
 }
 
 export function SectionButton(props: _Props) {
