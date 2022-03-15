@@ -3,7 +3,9 @@ import { routes } from "config/routes";
 
 export function Top() {
     return <PageWrapper>
-        <div>{routes.top.name}</div>
-        <div>{routes.top.path}</div>
+        <div className="text-white font-zcool p-6 items-center">
+            <div>{routes.top.name}</div>
+            <div>{routes.top.path}</div>
+        </div>
     </PageWrapper>;
 }

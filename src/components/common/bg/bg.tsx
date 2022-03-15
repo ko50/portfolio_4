@@ -1,5 +1,7 @@
+import React from "react";
+
 type _Props = {
-    children: JSX.Element[];
+    children: React.ReactNode;
 }
 
 export function Background(props: _Props) {
