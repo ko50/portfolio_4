@@ -10,10 +10,8 @@ type _Props = {
 export function PageWrapper(props: _Props = { children: [] }) {
     return <Background>
         <Header />
-        <SectionButtonList names={["About Me", "Skills", "Works", "Contacts"]} />
+        <SectionButtonList />
         <span className="h-4" />
-        <div>
-            {props.children}
-        </div>
+        <div>{props.children}</div>
     </Background>;
 }

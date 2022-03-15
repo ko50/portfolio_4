@@ -1,13 +1,14 @@
-import { Background } from "components/common/bg/bg";
-import { Header } from "components/common/header/header";
-import { SectionButtonList } from "components/common/section_button/section_button_list";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+
+import { routeList } from "config/routes";
 
 function App() {
   return (
-    <Background>
-      <Header />
-      <SectionButtonList names={["About Me", "Skills", "Works", "Contacts"]} />
-    </Background>
+    <BrowserRouter>
+      <Switch>
+        {routeList.map((v) => <Route path={v.path} component={v.page} />)}
+      </Switch>
+    </BrowserRouter>
   );
 }
 
