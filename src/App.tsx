@@ -6,7 +6,7 @@ function App() {
   return (
     <BrowserRouter>
       <Switch>
-        {routeList.map((v) => <Route path={v.path} component={v.page} />)}
+        {routeList.map((v) => <Route exact path={v.path} component={v.page} />)}
       </Switch>
     </BrowserRouter>
   );
