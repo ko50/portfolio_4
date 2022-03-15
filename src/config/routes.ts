@@ -1,6 +1,10 @@
 import React from "react"
 
-import { PageWrapper } from "components/common/page_wrapper"
+import { Top } from "pages/top";
+import { AboutMe } from "pages/about_me";
+import { Skills } from "pages/skills";
+import { Works } from "pages/works";
+import { Contacts } from "pages/contacts";
 
 export type RouteInfo = {
     name: string,
@@ -20,27 +24,27 @@ export const routes: _Routes = {
     top: {
         name: "Top",
         path: "/",
-        page: PageWrapper,
+        page: Top,
     },
     about_me: {
         name: "About Me",
         path: "/about_me",
-        page: PageWrapper,
+        page: AboutMe,
     },
     skills: {
         name: "Skills",
         path: "/skills",
-        page: PageWrapper,
+        page: Skills,
     },
     works: {
         name: "Works",
         path: "/works",
-        page: PageWrapper,
+        page: Works,
     },
     contacts: {
         name: "Contacts",
         path: "/contacts",
-        page: PageWrapper,
+        page: Contacts,
     },
 }
 
