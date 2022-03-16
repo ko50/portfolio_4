@@ -15,7 +15,7 @@ export let contactsAdapter: ContactsAdapter;
 
 export const adapters: Map<string, IAdapter<APIResource>> = new Map();
 
-export function setupAPI() {
+export function setupAPI(): void {
     apiHandler = new APIHandler("https://api.ko50.dev", "/api");
 
     aboutMeAdapter = new AboutMeAdapter(apiHandler);
@@ -29,7 +29,7 @@ export function setupAPI() {
     adapters.set("/contacts", contactsAdapter);
 }
 
-export function setUpMockAPI() {
+export function setUpMockAPI(): void {
     apiHandler = new APIHandler("http://localhost:8000", "/api");
 
     aboutMeAdapter = new AboutMeAdapter(apiHandler);
@@ -42,5 +42,3 @@ export function setUpMockAPI() {
     adapters.set("/works", worksAdapter);
     adapters.set("/contacts", contactsAdapter);
 }
-
-setupAPI();

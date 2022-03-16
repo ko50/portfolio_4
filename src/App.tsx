@@ -1,8 +1,12 @@
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
-import { routeList } from "utils/routes";
+import { routeList, setupRoutes } from "utils/routes";
+import { setupAPI } from "api/setup";
 
 function App() {
+    setupRoutes();
+    setupAPI();
+
     return (
         <BrowserRouter>
             <Switch>
