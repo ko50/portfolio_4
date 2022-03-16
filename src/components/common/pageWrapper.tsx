@@ -6,7 +6,7 @@ import { SectionButtonList } from "components/common/section_button/sectionButto
 import { Provider } from "utils/context/context";
 import { APIResource } from "utils/resourceTypes/base";
 import { useLocation } from "react-router-dom";
-import { adapters } from "config/adapters";
+import { adapters } from "api/setup";
 
 
 type _Props = {
