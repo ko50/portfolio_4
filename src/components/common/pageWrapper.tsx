@@ -1,10 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { Background } from "components/common/background/background";
 import { Header } from "components/common/header/header";
 import { SectionButtonList } from "components/common/section_button/sectionButtonList";
-import { Provider } from "utils/context";
-import { APIResource } from "utils/resourceTypes/base";
+import { Provider, SiteState } from "utils/context";
 import { useLocation } from "react-router-dom";
 import { adapters } from "api/setup";
 
@@ -14,8 +13,7 @@ type _Props = {
 }
 
 export function PageWrapper(props: _Props) {
-    let loading: boolean = true;
-    let data: APIResource[] = [];
+    const [value, setValue] = useState<SiteState>({ loading: true, data: [] });
 
     const route: string = useLocation().pathname;
     if (route !== "/") {
@@ -23,12 +21,16 @@ export function PageWrapper(props: _Props) {
         console.log(adapter.path);
 
         adapter.getResources().then((res) => {
-            loading = false;
-            data = res;
+            console.log(res);
+
+            const loading = false;
+            const data = res;
+
+            setValue({ loading: loading, data: data });
         });
     }
 
-    return <Provider value={{ loading: loading, data: data }}>
+    return <Provider value={value}>
         <Background>
             <Header />
             <SectionButtonList />
