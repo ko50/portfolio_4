@@ -15,7 +15,7 @@ export class APIHandler implements IHandler {
         const url = this.apiOrigin + this.apiPrefix + path
         const response: AxiosResponse<T[]> = await axios.get<T[]>(url);
 
-        if (response.status != 200) return [];
+        if (response.status !== 200) return [];
 
         return response.data;
     }
