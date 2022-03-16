@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Background } from "components/common/bg/background";
+import { Background } from "components/common/background/background";
 import { Header } from "components/common/header/header";
 import { SectionButtonList } from "components/common/section_button/sectionButtonList";
 import { Provider } from "utils/context";
