@@ -4,7 +4,7 @@ import { SkillsAdapter } from "api/adapters/skills";
 import { ContactsAdapter } from "api/adapters/contacts";
 import { WorksAdapter } from "api/adapters/works";
 
-const _apiHandler: APIHandler = new APIHandler();
+const _apiHandler: APIHandler = new APIHandler("https://api.ko50.dev", "/api");
 
 export const aboutMeAdapter: AboutMeAdapter = new AboutMeAdapter(_apiHandler);
 export const skillsAdapter: SkillsAdapter = new SkillsAdapter(_apiHandler);

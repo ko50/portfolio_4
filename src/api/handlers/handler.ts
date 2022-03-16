@@ -3,11 +3,16 @@ import axios, { AxiosResponse } from "axios";
 import { IHandler } from "api/handlers/base";
 
 export class APIHandler implements IHandler {
-    API_ORIGIN: string = "https://api.ko50.dev"
-    API_PREFIX: string = "/api"
+    apiOrigin: string;
+    apiPrefix: string;
+
+    constructor(apiOrigin: string, apiPrefix: string) {
+        this.apiOrigin = apiOrigin;
+        this.apiPrefix = apiPrefix;
+    }
 
     async get<T>(path: string): Promise<T[]> {
-        const url = this.API_ORIGIN + this.API_PREFIX + path
+        const url = this.apiOrigin + this.apiPrefix + path
         const response: AxiosResponse<T[]> = await axios.get<T[]>(url);
 
         if (response.status != 200) return [];
