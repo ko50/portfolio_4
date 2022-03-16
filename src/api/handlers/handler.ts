@@ -13,9 +13,13 @@ export class APIHandler implements IHandler {
 
     async get<T>(path: string): Promise<T[]> {
         const url = this.apiOrigin + this.apiPrefix + path
-        const response: AxiosResponse<T[]> = await axios.get<T[]>(url);
 
-        if (response.status !== 200) return [];
+        let response: AxiosResponse<T[]>;
+        try {
+            response = await axios.get<T[]>(url);
+        } catch (_) {
+            return [];
+        }
 
         return response.data;
     }
