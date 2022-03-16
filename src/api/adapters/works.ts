@@ -1,6 +1,6 @@
 import { IAdapter } from "api/adapters/base";
 import { APIHandler } from "api/handlers/handler";
-import { WorkResource } from "api/types/works";
+import { WorkResource } from "utils/resourceTypes/works";
 
 export class WorksAdapter implements IAdapter<WorkResource> {
     path = "/works";

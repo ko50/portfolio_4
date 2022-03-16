@@ -1,6 +1,6 @@
 import { IAdapter } from "api/adapters/base";
 import { APIHandler } from "api/handlers/handler";
-import { SkillResource } from "api/types/skills";
+import { SkillResource } from "utils/resourceTypes/skills";
 
 export class SkillsAdapter implements IAdapter<SkillResource> {
     path = "/skills";

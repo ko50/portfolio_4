@@ -1,4 +1,4 @@
-import { APIResource } from "api/types/base";
+import { APIResource } from "utils/resourceTypes/base";
 
 export interface ContactResource extends APIResource {
     name: string;

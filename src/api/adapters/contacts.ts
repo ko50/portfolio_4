@@ -1,6 +1,6 @@
 import { IAdapter } from "api/adapters/base";
 import { APIHandler } from "api/handlers/handler";
-import { ContactResource } from "api/types/contacts";
+import { ContactResource } from "utils/resourceTypes/contacts";
 
 export class ContactsAdapter implements IAdapter<ContactResource> {
     path = "/contacts";

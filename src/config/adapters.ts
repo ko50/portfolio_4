@@ -1,5 +1,5 @@
 import { routes } from "config/routes";
-import { APIResource } from "api/types/base";
+import { APIResource } from "utils/resourceTypes/base";
 import { IAdapter } from "api/adapters/base";
 import { aboutMeAdapter, contactsAdapter, skillsAdapter, worksAdapter } from "api/setup";
 
