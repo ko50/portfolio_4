@@ -1,8 +1,8 @@
 import React from "react";
 
-import { Background } from "components/common/bg/bg";
+import { Background } from "components/common/bg/background";
 import { Header } from "components/common/header/header";
-import { SectionButtonList } from "components/common/section_button/section_button_list";
+import { SectionButtonList } from "components/common/section_button/sectionButtonList";
 
 
 type _Props = {

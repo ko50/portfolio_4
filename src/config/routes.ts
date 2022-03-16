@@ -1,7 +1,7 @@
 import React from "react"
 
 import { Top } from "pages/top";
-import { AboutMe } from "pages/about_me";
+import { AboutMe } from "pages/aboutMe";
 import { Skills } from "pages/skills";
 import { Works } from "pages/works";
 import { Contacts } from "pages/contacts";

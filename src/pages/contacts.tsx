@@ -1,4 +1,4 @@
-import { PageWrapper } from "components/common/page_wrapper";
+import { PageWrapper } from "components/common/pageWrapper";
 import { routes } from "config/routes";
 
 export function Contacts() {

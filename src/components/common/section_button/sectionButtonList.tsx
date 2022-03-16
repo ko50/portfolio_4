@@ -1,4 +1,4 @@
-import { SectionButton } from "components/common/section_button/section_button"
+import { SectionButton } from "components/common/section_button/sectionButton"
 import { sectionRouteList } from "config/routes";
 
 export function SectionButtonList() {

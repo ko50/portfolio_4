@@ -1,6 +1,6 @@
 import { IAdapter } from "api/adapters/base";
 import { APIHandler } from "api/handlers/handler";
-import { AboutMeResource } from "api/types/about_me";
+import { AboutMeResource } from "api/types/aboutMe";
 
 export class AboutMeAdapter implements IAdapter<AboutMeResource> {
     path = "/about_me";

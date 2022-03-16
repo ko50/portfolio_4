@@ -1,5 +1,5 @@
 import { APIHandler } from "api/handlers/handler";
-import { AboutMeAdapter } from "api/adapters/about_me";
+import { AboutMeAdapter } from "api/adapters/aboutMe";
 import { SkillsAdapter } from "api/adapters/skills";
 import { ContactsAdapter } from "api/adapters/contacts";
 import { WorksAdapter } from "api/adapters/works";
