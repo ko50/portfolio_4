@@ -9,7 +9,7 @@ import { Contacts } from "pages/contacts";
 export type RouteInfo = {
     name: string,
     path: string,
-    page: React.ComponentType<any>,
+    page: React.ComponentType,
 }
 
 type _Routes = {
