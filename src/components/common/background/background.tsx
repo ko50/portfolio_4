@@ -5,7 +5,7 @@ type _Props = {
 }
 
 export function Background(props: _Props) {
-    return <div className="bg-sky w-100 h-screen">
+    return <div className="bg-sky w-100 min-h-screen">
         {props.children}
     </div>;
 }
