@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-import { RouteInfo } from "config/routes";
+import { RouteInfo } from "utils/routes";
 
 type _Props = {
     route: RouteInfo,

@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
-import { routeList } from "config/routes";
+import { routeList } from "utils/routes";
 
 function App() {
     return (

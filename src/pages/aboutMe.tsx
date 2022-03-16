@@ -1,5 +1,5 @@
 import { PageWrapper } from "components/common/pageWrapper";
-import { routes } from "config/routes";
+import { routes } from "utils/routes";
 
 export function AboutMe() {
     return <PageWrapper>

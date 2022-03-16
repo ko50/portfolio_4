@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-import { routes } from "config/routes";
+import { routes } from "utils/routes";
 
 export function RootButton() {
     return <Link to={routes.top.path}>

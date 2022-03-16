@@ -1,5 +1,5 @@
 import { SectionButton } from "components/common/section_button/sectionButton"
-import { sectionRouteList } from "config/routes";
+import { sectionRouteList } from "utils/routes";
 
 export function SectionButtonList() {
     return <div className="p-1">
