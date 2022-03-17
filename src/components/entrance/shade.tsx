@@ -1,4 +1,4 @@
-export function EntranceShade() {
+export const EntranceShade = () => {
     return <div className="animate-dawn">
         <div className="bg-midnight w-screen h-screen">
         </div>

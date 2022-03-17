@@ -2,7 +2,7 @@ import { Consumer } from "utils/context";
 import { WorkResource } from "utils/resourceTypes/works";
 import { WorkCard } from "components/works/workCard"
 
-export function WorkCardList() {
+export const WorkCardList = () => {
     return <div className="flex flex-col items-center">
         <Consumer>
             {value => (

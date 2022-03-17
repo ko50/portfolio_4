@@ -4,7 +4,7 @@ type _Props = {
     resource: WorkResource,
 }
 
-export function WorkCard(props: _Props) {
+export const WorkCard = (props: _Props) => {
     return <a href={props.resource.link} target="_blank" rel="noopener noreferrer">
         <div className="bg-ocean rounded p-5 max-w-2xl">
             <div className="relative w-full">

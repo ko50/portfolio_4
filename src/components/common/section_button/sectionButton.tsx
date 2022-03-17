@@ -6,7 +6,7 @@ type _Props = {
     route: RouteInfo,
 }
 
-export function SectionButton(props: _Props) {
+export const SectionButton = (props: _Props) => {
     return <div className="px-1.5 py-2">
         <Link to={props.route.path}>
             <div className="bg-ocean px-2 py-1.5 rounded drop-shadow-lg">

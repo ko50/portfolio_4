@@ -12,7 +12,7 @@ type _Props = {
     children: React.ReactNode
 }
 
-export function PageWrapper(props: _Props) {
+export const PageWrapper = (props: _Props) => {
     const [value, setValue] = useState<SiteState>({ loading: true, data: [] });
 
     const route: string = useLocation().pathname;
