@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import { Background } from "components/common/background/background";
 import { Header } from "components/common/header/header";
@@ -16,19 +16,21 @@ export function PageWrapper(props: _Props) {
     const [value, setValue] = useState<SiteState>({ loading: true, data: [] });
 
     const route: string = useLocation().pathname;
-    if (route !== "/") {
+    useEffect(() => {
+        if (route === "/") return;
+
         const adapter = adapters.get(route)!;
         console.log(adapter.path);
 
-        adapter.getResources().then((res) => {
+        (async () => {
+            const res = await adapter.getResources();
             console.log(res);
 
             const loading = false;
             const data = res;
-
             setValue({ loading: loading, data: data });
-        });
-    }
+        })();
+    }, []);
 
     return <Provider value={value}>
         <Background>
