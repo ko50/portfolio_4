@@ -1,26 +1,19 @@
 import { WorkResource } from "utils/resourceTypes/works";
+import { Screenshot } from "components/works/components/screenshot";
+import { Information } from "./components/information";
+import { A } from "components/common/utils/a";
 
 type _Props = {
     resource: WorkResource,
 }
 
 export const WorkCard = (props: _Props) => {
-    return <a href={props.resource.link} target="_blank" rel="noopener noreferrer">
+    return <A href={props.resource.link}>
         <div className="bg-ocean rounded p-5 max-w-2xl">
-            <img className="h-80 w-full object-cover clip-screenshot" src={props.resource.screenshot} />
-            <div className="flex items-start pt-4">
-                <span className="text-star text-4xl">★</span>
-                <span className="w-1" />
-                <div className="block">
-                    <div className="font-zcool text-white text-4xl">
-                        {props.resource.name}
-                        <span className="text-grey text-base font-dosis"> ...{props.resource.tags.join()}</span>
-                    </div>
-                    <div className="text-white font-maru text-base">{props.resource.description}</div>
-                </div>
-            </div>
+            <Screenshot screenshot={props.resource.screenshot} />
+            <Information name={props.resource.name} description={props.resource.description} tags={props.resource.tags} />
         </div>
-    </a>;
+    </A>;
 }
 
 // 白い部分は同じ要素を別途構築してホバー時にz-indexで制御しつつスライドイン/スケールインさせる
