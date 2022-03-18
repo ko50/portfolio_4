@@ -1,11 +1,8 @@
 import { PageWrapper } from "components/common/pageWrapper";
-import { routes } from "utils/routes";
+import { StarrySky } from "components/skills/starrySky";
 
 export const Skills = () => {
     return <PageWrapper>
-        <div className="text-white font-zcool p-6 items-center">
-            <div>{routes.skills.name}</div>
-            <div>{routes.skills.path}</div>
-        </div>
+        <StarrySky />
     </PageWrapper>;
 }
