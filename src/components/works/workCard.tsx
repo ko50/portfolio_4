@@ -31,12 +31,9 @@ export const WorkCard = (props: _Props) => {
                         name={props.resource.name}
                         description={props.resource.description}
                         tags={props.resource.tags}
-                    // hovered={hovered}
                     />
                 </div>
             </div>
         </HoverDetector>
     </A>;
 }
-
-// 白い部分は同じ要素を別途構築してホバー時にz-indexで制御しつつスライドイン/スケールインさせる
