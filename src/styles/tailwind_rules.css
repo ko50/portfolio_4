@@ -6,6 +6,7 @@
 
 /* Shapes */
 @import "shapes/works.css";
+@import "shapes/skills.css";
 
 
 @tailwind base;
