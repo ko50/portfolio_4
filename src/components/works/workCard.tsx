@@ -1,12 +1,12 @@
 import { useState } from "react";
 
 import { WorkResource } from "utils/resourceTypes/works";
-import { Screenshot } from "components/works/components/screenshot";
-import { Information } from "components/works/components/information";
+import { Screenshot } from "components/works/elements/screenshot";
+import { Information } from "components/works/elements/information";
 import { A } from "components/common/utils/a";
 import { HoverDetector } from "components/common/utils/hoverDetector";
-import { EnhanceCover } from "components/works/components/enhanceCover";
-import { HoveredText } from "./components/hoveredText";
+import { EnhanceCover } from "components/works/elements/enhanceCover";
+import { HoveredText } from "components/works/elements/hoveredText";
 
 type _Props = {
     resource: WorkResource,
