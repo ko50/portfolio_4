@@ -7,9 +7,11 @@ type _Props = {
 
 export const InsideStar = (props: _Props) => {
     const path = props.expanded ? "s-clip-star" : "s-clip-decagon";
+    const outerSize = props.expanded ? "w-72 h-72" : "w-10 h-10";
+    const innerSize = props.expanded ? "w-[17rem] h-[17rem]" : "w-10 h-10";
 
-    return <div className={"bg-star grid w-72 h-72 items-center justify-items-center" + path}>
-        <div className={"bg-white w-[17rem] h-[17rem] grid items-center justify-items-center" + path}>
+    return <div className={"bg-star grid items-center justify-items-center " + path + " " + outerSize}>
+        <div className={"bg-white grid items-center justify-items-center " + path + " " + innerSize}>
             {props.children}
         </div>
     </div>;
