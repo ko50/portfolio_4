@@ -2,8 +2,8 @@ import { useState } from "react";
 
 import { HoverDetector } from "components/common/utils/hoverDetector";
 import { SkillResource } from "utils/resourceTypes/skills";
-import { ExpandedStar } from "components/skills/elements/expandedStar";
-import { ShrinkedStar } from "components/skills/elements/shrinkedStar";
+import { ExpandedStar } from "components/skills/atom/expandedStar";
+import { ShrinkedStar } from "components/skills/atom/shrinkedStar";
 
 type _Props = {
     resource: SkillResource,
