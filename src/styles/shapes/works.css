@@ -1,7 +1,16 @@
 .clip-screenshot {
-    clip-path: polygon(
-        0%  0%, 100%  0%, 100% calc(100% - 10px), 0% calc(100% - 10px),
-        0% calc(100% - 7px), 100% calc(100% - 7px), 100% calc(100% - 5px), 0% calc(100% - 5px),
-        0% calc(100% - 1px), 100% calc(100% - 1px), 100% 100%, 0% 100%
-    );
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% calc(100% - 10px),
+    0% calc(100% - 10px),
+    0% calc(100% - 7px),
+    100% calc(100% - 7px),
+    100% calc(100% - 5px),
+    0% calc(100% - 5px),
+    0% calc(100% - 1px),
+    100% calc(100% - 1px),
+    100% 100%,
+    0% 100%
+  );
 }
