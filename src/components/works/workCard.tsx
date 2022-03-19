@@ -1,12 +1,11 @@
 import { useState } from "react";
 
 import { WorkResource } from "utils/resourceTypes/works";
-import { Screenshot } from "components/works/elements/screenshot";
-import { Information } from "components/works/elements/information";
 import { A } from "components/common/utils/a";
 import { HoverDetector } from "components/common/utils/hoverDetector";
-import { EnhanceCover } from "components/works/elements/enhanceCover";
-import { HoveredText } from "components/works/elements/hoveredText";
+import { HoveredText } from "components/works/mol/hoveredText";
+import { DefaultCard } from "components/works/mol/defaultCard";
+import { HoveredCover } from "components/works/mol/hoveredCover";
 
 type _Props = {
     resource: WorkResource,
@@ -18,21 +17,9 @@ export const WorkCard = (props: _Props) => {
     return <A href={props.resource.link}>
         <HoverDetector dispatcher={setHovered}>
             <div className="relative">
-                <EnhanceCover hovered={hovered} />
-                <HoveredText
-                    name={props.resource.name}
-                    description={props.resource.description}
-                    tags={props.resource.tags}
-                    hovered={hovered}
-                />
-                <div className="bg-ocean rounded p-5 max-w-2xl">
-                    <Screenshot screenshot={props.resource.screenshot} />
-                    <Information
-                        name={props.resource.name}
-                        description={props.resource.description}
-                        tags={props.resource.tags}
-                    />
-                </div>
+                <HoveredCover hovered={hovered} />
+                <HoveredText resource={props.resource} hovered={hovered} />
+                <DefaultCard resource={props.resource} />
             </div>
         </HoverDetector>
     </A>;

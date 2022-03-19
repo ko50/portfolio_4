@@ -5,7 +5,7 @@ type _Props = {
 export const EnhanceCover = (props: _Props) => {
     if (!props.hovered) return <div></div>;
 
-    return <div className="w-full h-40 absolute bottom-0">
+    return <div className="w-full h-full">
         <div className="w-full border-b-[3px] border-white " />
         <div className="pb-0.5" />
         <div className="w-full border-b-4 border-white " />
