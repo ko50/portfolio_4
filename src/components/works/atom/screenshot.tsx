@@ -3,5 +3,5 @@ type _Props = {
 }
 
 export const Screenshot = (props: _Props) => {
-    return <img className="h-80 w-full object-cover clip-screenshot" src={props.screenshot} />;
+    return <img className="h-80 w-full object-cover w-clip-screenshot" src={props.screenshot} />;
 };
