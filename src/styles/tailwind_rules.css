@@ -2,8 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@400;500&family=Kosugi+Maru&family=ZCOOL+QingKe+HuangYou&display=swap");
 
 /* KeyFrames */
-@import "keyframes/entrance.css";
-@import "keyframes/works.css";
+@import "keyframes/common.css";
 
 /* Shapes */
 @import "shapes/works.css";

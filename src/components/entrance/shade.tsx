@@ -1,5 +1,5 @@
 export const EntranceShade = () => {
-    return <div className="animate-dawn">
+    return <div className="">
         <div className="bg-midnight w-screen h-screen">
         </div>
     </div>;
