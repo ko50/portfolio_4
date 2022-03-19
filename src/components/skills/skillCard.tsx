@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import { HoverDetector } from "components/common/utils/hoverDetector";
 import { SkillResource } from "utils/resourceTypes/skills";
-import { ExpandedStar } from "components/skills/atom/expandedStar";
+import { InsideStar } from "components/skills/atom/insideSide";
 import { ShrinkedStar } from "components/skills/atom/shrinkedStar";
 
 type _Props = {
@@ -14,8 +14,8 @@ export const SkillCard = (props: _Props) => {
 
     if (hovered)
         return <HoverDetector dispatcher={setHovered}>
-            <ExpandedStar>
-            </ExpandedStar>
+            <InsideStar expanded={hovered}>
+            </InsideStar>
         </HoverDetector>;
 
     return <HoverDetector dispatcher={setHovered}>
