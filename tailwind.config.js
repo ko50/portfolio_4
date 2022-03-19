@@ -22,6 +22,8 @@ module.exports = {
       },
       animation: {
         dawn: "dawn 3s cubic-bezier(0.64, 0, 0.78, 0) 1s both",
+        "w-hover-enhance": "w-hovered-enhance 0.3s cubic-bezier(0.16, 1, 0.3, 1) both",
+        "w-hover-disenhance": "w-hovered-disenhance 0.6s cubic-bezier(0.16, 1, 0.3, 1) both",
       },
     },
   },
