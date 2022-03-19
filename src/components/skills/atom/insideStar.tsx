@@ -7,17 +7,15 @@ type _Props = {
 
 export const InsideStar = (props: _Props) => {
     const path = props.expanded ? "s-clip-star" : "s-clip-decagon";
-    const outerSize = props.expanded ? "w-72 h-72" : "w-10 h-10";
-    const innerSize = props.expanded ? "w-[17rem] h-[17rem]" : "w-10 h-10";
+    const offset = props.expanded ? "" : "mt-4";
 
-    return <div className={"bg-star grid items-center justify-items-center " + path + " " + outerSize}>
+    const outerColor = props.expanded ? "bg-star" : "bg-2nd-mag-star ";
+    const outerSize = props.expanded ? "w-72 h-72" : "w-14 h-14";
+    const innerSize = props.expanded ? "w-[17rem] h-[17rem]" : "w-11 h-11";
+
+    return <div className={"grid items-center justify-items-center " + path + " " + outerColor + " " + outerSize + " " + offset}>
         <div className={"bg-white grid items-center justify-items-center " + path + " " + innerSize}>
             {props.children}
         </div>
     </div>;
 }
-
-// 中身の白いところはホバー時とそうでないときで同じものを使う
-// アイコンも同じ
-// 白いところの要素としてアイコンタグ説明とかを入れる
-// 白いところはGrid Viewなのでcolumnにそって並べればいいよね

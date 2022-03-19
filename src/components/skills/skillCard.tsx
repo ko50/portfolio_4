@@ -13,7 +13,7 @@ export const SkillCard = (props: _Props) => {
     const [hovered, setHovered] = useState(false);
 
     return <HoverDetector dispatcher={setHovered}>
-        <OutsideStar>
+        <OutsideStar expanded={hovered}>
             <InsideStar expanded={hovered}>
 
             </InsideStar>
