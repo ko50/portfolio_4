@@ -6,8 +6,8 @@ type _Props = {
 
 export const ShrinkedStar = (props: _Props) => {
     return <div className="p-20">
-        <div className="bg-ocean clip-star-ex w-[8rem] h-[8rem] relative">
-            <div className="bg-star clip-star-ex w-[7rem] h-[7rem] absolute left-2 top-2">
+        <div className="bg-ocean clip-star-ex w-32 h-32 grid items-center justify-items-center">
+            <div className="bg-star clip-star-ex w-28 h-28">
                 {props.children}
             </div>
         </div>
