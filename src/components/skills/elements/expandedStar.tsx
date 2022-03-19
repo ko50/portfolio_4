@@ -5,8 +5,12 @@ type _Props = {
 }
 
 export const ExpandedStar = (props: _Props) => {
-    return <div className="bg-star clip-star-ex w-[20rem] h-[20rem] relative">
-        <div className="bg-white clip-star-ex w-[19rem] h-[19rem] absolute left-2 top-2">
+    const outerSize = "w-[18rem] h-[18rem]";
+    const innerSize = "w-[17rem] h-[17rem]";
+    const gap = "left-[calc((18rem-17rem)/2)] top-[calc((18rem-17rem)/2)]";
+
+    return <div className={"bg-star clip-star-ex relative " + outerSize}>
+        <div className={"bg-white clip-star-ex absolute " + innerSize + " " + gap}>
             {props.children}
         </div>
     </div>;
