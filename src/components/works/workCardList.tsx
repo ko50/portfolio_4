@@ -3,7 +3,7 @@ import { WorkResource } from "utils/resourceTypes/works";
 import { WorkCard } from "components/works/workCard"
 
 export const WorkCardList = () => {
-    return <div className="flex flex-col items-center">
+    return <div className="grid grid-cols-1 justify-items-center">
         <Consumer>
             {value => (
                 value.data.map((resource, i) => (
