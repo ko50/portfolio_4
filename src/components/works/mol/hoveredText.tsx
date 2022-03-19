@@ -7,9 +7,11 @@ type _Props = {
 }
 
 export const HoveredText = (props: _Props) => {
-    if (!props.hovered) return <div></div>;
+    const animation = props.hovered
+        ? "animate-w-hover-txt-appear"
+        : "animate-w-hover-txt-hide";
 
-    return <div className="flex items-start absolute bottom-0 p-5">
+    return <div className={"flex items-start absolute bottom-0 p-5 " + animation}>
         <Information
             name={props.resource.name}
             description={props.resource.description}

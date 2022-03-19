@@ -23,6 +23,8 @@ module.exports = {
       animation: {
         "w-hover-enhance": "scalein-y 0.3s cubic-bezier(0.16, 1, 0.3, 1) both",
         "w-hover-disenhance": "scaleout-y 0.6s cubic-bezier(0.16, 1, 0.3, 1) both",
+        "w-hover-txt-appear": "fadein 0.3s ease both",
+        "w-hover-txt-hide": "fadeout 0.3s ease both",
       },
     },
   },
